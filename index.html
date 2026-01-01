@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./src/assets/icons/dog.svg" />
+
+    <title>Mundo Pet</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content">
+            <img src="src/assets/icons/dog.svg" alt="Cachorro" class="logo-icon">
+            <p class="logo-text">MUNDO PET</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="schedule">
+            <div class="schedule-header">
+                <div class="schedule-title">
+                    <h1>Sua agenda</h1>
+                    <p>Aqui você pode ver todos os clientes e serviços agendados para hoje.</p>
+                </div>
+                <div class="input-wrapper-date">
+                    <img src="src/assets/icons/calendar.svg" alt="Calendário" class="date-picker-icon ">
+                    <input type="date" name="date" id="date" class="date-picker">
+                    <img src="src/assets/icons/arrow.svg" alt="seta" class="date-picker-icon ">
+
+                </div>
+            </div>
+
+            <div class="schedule-periods">
+                <div class="period-group">
+                    <div class="period-info">
+                        <div class="period-title">
+                            <img src="src/assets/icons/sun.svg" alt="Sol">
+                            <h3>Manhã</h3>
+                        </div>
+                        <p class="period-hour">09h-12h</p>
+                    </div>
+                    <hr class="separator">
+                    <div class="appointment-card">
+                        <div class="appointment-details">
+                            <p class="appointment-text">
+                                <span class="appointment-time">9:00</span>
+                                Mel /
+                                <span class="tutor-name">João Souza</span>
+                            </p>
+                            <p class="appointment-service">Corte de Unhas</p>
+                        </div>
+                        <button class="btn-remove">Remover agendamento</button>
+                    </div>
+                </div>
+
+                <div class="period-group">
+                    <div class="period-info">
+                        <div class="period-title">
+                            <img src="src/assets/icons/cloud-sun.svg" alt="Sol Nublado">
+                            <h3>Tarde</h3>
+                        </div>
+                        <p class="period-hour">13h-18h</p>
+                    </div>
+                    <hr class="separator">
+                    <div class="appointment-card">
+                        <div class="appointment-details">
+                            <p class="appointment-text">
+                                <span class="appointment-time">13:00</span>
+                                Mel /
+                                <span class="tutor-name">João Souza</span>
+                            </p>
+                            <p class="appointment-service">Corte de Unhas</p>
+                        </div>
+                        <button class="btn-remove">Remover agendamento</button>
+                    </div>
+                </div>
+
+                <div class="period-group">
+                    <div class="period-info">
+                        <div class="period-title">
+                            <img src="src/assets/icons/moon.svg" alt="Lua">
+                            <h3>Noite</h3>
+                        </div>
+                        <p class="period-hour">19h-21h</p>
+                    </div>
+                    <hr class="separator">
+                    <div class="appointment-card">
+                        <div class="appointment-details">
+                            <p class="appointment-text">
+                                <span class="appointment-time">20:00</span>
+                                Mel /
+                                <span class="tutor-name">João Souza</span>
+                            </p>
+                            <p class="appointment-service">Corte de Unhas</p>
+                        </div>
+                        <button class="btn-remove">Remover agendamento</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <button class="btn-primary" id="openModal">
+            NOVO AGENDAMENTO
+        </button>
+    </footer>
+
+
+    <dialog>
+        <section class="form-section">
+            <div class="form-header">
+                <h1>Agende um atendimento</h1>
+                <p>Preencha os dados do cliente para realizar o agendamento:</p>
+            </div>
+
+            <form action="" class="appointment-form">
+                <div class="input-group">
+                    <label for="tutor">Nome do tutor</label>
+                    <div class="input-wrapper">
+                        <img src="src/assets/icons/user.svg" alt="Usuário">
+                        <input type="text" id="tutor" placeholder="Nome do dono">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="pet">Nome do pet</label>
+                    <div class="input-wrapper">
+                        <img src="src/assets/icons/pet-paw.svg" alt="Pet">
+                        <input type="text" id="pet" placeholder="Nome do pet">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="phone">Telefone</label>
+                    <div class="input-wrapper">
+                        <img src="src/assets/icons/phone.svg" alt="Telefone">
+                        <input type="tel" id="phone" placeholder="(00) 00000-0000">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="description">Descrição do serviço</label>
+                    <textarea name="description" id="description" placeholder="Ex: Banho e tosa"></textarea>
+                </div>
+
+                <div class="container-datetime">
+                    <div class="input-group">
+                        <label for="form-date">Data</label>
+
+                        <div class="input-wrapper-date-form">
+                            <img src="src/assets/icons/calendar.svg" alt="Calendário" class="date-picker-icon ">
+                            <input type="date" name="form-date" id="form-date" class="date-picker">
+                            <img src="src/assets/icons/arrow.svg" alt="seta" class="date-picker-icon ">
+
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="hour">Hora</label>
+                        <div class="input-wrapper-hour">
+                            <img src="src/assets/icons/clock.svg" alt="Relógio" class="hour-picker-icon ">
+                            <input type="time" name="form-hour" id="form-hour" class="hour-picker">
+                            <img src="src/assets/icons/arrow.svg" alt="seta" class="hour-picker-icon ">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wrapper-button">
+                    <button type="submit" class="btn-primary">Agendar</button>
+                </div>
+            </form>
+        </section>
+
+    </dialog>
+</body>
+
+</html>
