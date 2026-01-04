@@ -23,24 +23,25 @@ Este projeto foi construído utilizando as seguintes ferramentas:
 
 1. **Clone o repositório:**
    ```bash
-   git clone [https://github.com/seu-usuario/mundo-pet.git](https://github.com/seu-usuario/mundo-pet.git)
+   git clone [https://github.com/seu-usuario/mundo-pet.git](https://github.com/seu-usuario/mundo-pet.git)](https://github.com/Isabelle-Vicente-Oliveira/Mundo-Pet.git)
 
 2. **Instale as dependências:**
-
-Bash
-
-npm install
+     ```bash
+      npm install
+    ```
 
 3. **Inicie o servidor da API (JSON Server):**
 
-Bash
+     ```bash
+       npm run server
+     ```
 
-npm run server
-3. **Inicie o servidor de desenvolvimento (Webpack):**
+4. **Inicie o servidor de desenvolvimento (Webpack):**
 
-Bash
+        ```bash
+           npm run dev
+        ```
 
-npm run dev
-4. **A aplicação estará disponível em http://localhost:1234 (ou na porta indicada no console).**
+5. **A aplicação estará disponível em http://localhost:1234 (ou na porta indicada no console).**
 
-Desenvolvido por Isabelle Vicente Oliveira
+*Desenvolvido por Isabelle Vicente Oliveira*
