@@ -42,17 +42,19 @@
                         <p class="period-hour">09h-12h</p>
                     </div>
                     <hr class="separator">
-                    <div class="appointment-card">
-                        <div class="appointment-details">
-                            <p class="appointment-text">
-                                <span class="appointment-time">9:00</span>
-                                Mel /
-                                <span class="tutor-name">João Souza</span>
-                            </p>
-                            <p class="appointment-service">Corte de Unhas</p>
-                        </div>
-                        <button class="btn-remove">Remover agendamento</button>
-                    </div>
+                    <ul id="period-morning" class="period">
+                        <!-- <li class="appointment-card">
+                            <div class="appointment-details">
+                                <p class="appointment-text">
+                                    <span class="appointment-time">9:00</span>
+                                    Mel /<span class="tutor-name">João Souza</span>
+                                </p>
+                                <p class="appointment-service">Corte de Unhas</p>
+                            </div>
+                            <button class="btn-remove">Remover agendamento</button>
+                        </li> -->
+                    </ul>
+
                 </div>
 
                 <div class="period-group">
@@ -64,17 +66,19 @@
                         <p class="period-hour">13h-18h</p>
                     </div>
                     <hr class="separator">
-                    <div class="appointment-card">
-                        <div class="appointment-details">
-                            <p class="appointment-text">
-                                <span class="appointment-time">13:00</span>
-                                Mel /
-                                <span class="tutor-name">João Souza</span>
-                            </p>
-                            <p class="appointment-service">Corte de Unhas</p>
-                        </div>
-                        <button class="btn-remove">Remover agendamento</button>
-                    </div>
+                    <ul id="period-afternoon" class="period">
+                        <!-- <li class="appointment-card">
+                            <div class="appointment-details">
+                                <p class="appointment-text">
+                                    <span class="appointment-time">13:00</span>
+                                    Mel /
+                                    <span class="tutor-name">João Souza</span>
+                                </p>
+                                <p class="appointment-service">Corte de Unhas</p>
+                            </div>
+                            <button class="btn-remove">Remover agendamento</button>
+                        </li> -->
+                    </ul>
                 </div>
 
                 <div class="period-group">
@@ -86,17 +90,19 @@
                         <p class="period-hour">19h-21h</p>
                     </div>
                     <hr class="separator">
-                    <div class="appointment-card">
-                        <div class="appointment-details">
-                            <p class="appointment-text">
-                                <span class="appointment-time">20:00</span>
-                                Mel /
-                                <span class="tutor-name">João Souza</span>
-                            </p>
-                            <p class="appointment-service">Corte de Unhas</p>
-                        </div>
-                        <button class="btn-remove">Remover agendamento</button>
-                    </div>
+                    <ul id="period-night" class="period">
+                        <!-- <li class="appointment-card">
+                            <div class="appointment-details">
+                                <p class="appointment-text">
+                                    <span class="appointment-time">20:00</span>
+                                    Mel /
+                                    <span class="tutor-name">João Souza</span>
+                                </p>
+                                <p class="appointment-service">Corte de Unhas</p>
+                            </div>
+                            <button class="btn-remove">Remover agendamento</button>
+                        </li> -->
+                    </ul>
                 </div>
             </div>
 
@@ -138,7 +144,7 @@
                     <label for="phone">Telefone</label>
                     <div class="input-wrapper">
                         <img src="src/assets/icons/phone.svg" alt="Telefone">
-                        <input type="tel" id="phone" placeholder="(00) 00000-0000">
+                        <input type="tel" id="phone" placeholder="(00) 00000-0000" size="11">
                     </div>
                 </div>
 
@@ -171,7 +177,7 @@
                 </div>
 
                 <div class="wrapper-button">
-                    <button type="submit" class="btn-primary">Agendar</button>
+                    <button type="submit" class="btn-primary" id="button-submit">Agendar</button>
                 </div>
             </form>
         </section>

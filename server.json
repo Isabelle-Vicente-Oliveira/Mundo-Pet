@@ -1,3 +1,20 @@
 {
-    "schedules": []
+  "schedules": [
+    {
+      "id": 1767533442070,
+      "name": "Isabelle Vicente",
+      "pet": "Tigresa",
+      "phone": "11111111111",
+      "description": "Corta unhas",
+      "when": "2026-01-04T11:00:00.000Z"
+    },
+    {
+      "id": 1767536135981,
+      "name": "Isabelle Vicente",
+      "pet": "Shackara",
+      "phone": "11111111111",
+      "description": "Banho",
+      "when": "2026-01-05T09:00:00.000Z"
+    }
+  ]
 }

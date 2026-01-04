@@ -11,7 +11,6 @@ dialog {
     display: flex;
     flex-direction: column;
     background-color: var(--bg-primary);
-
     gap: 2rem;
     padding: 2rem;
 }
@@ -64,6 +63,15 @@ label {
     margin-bottom: 1.5rem;
 }
 
+.input-wrapper:hover {
+    border: 1px solid var(--border-secondary);
+}
+
+.input-wrapper:active {
+    border: 1px solid var(--border-brand);
+}
+
+
 .input-wrapper i {
     margin-right: 0.5rem;
 }
@@ -84,10 +92,20 @@ textarea {
     font-size: 1rem;
     border: 1px solid var(--border-primary);
     border-radius: 0.5rem;
+    color: var(--content-secondary);
 
     background-color: transparent;
     outline: none;
 }
+
+textarea:hover {
+    border: 1px solid var(--border-secondary);
+}
+
+textarea:active {
+    border: 1px solid var(--border-brand);
+}
+
 
 
 .container-datetime {
@@ -111,6 +129,20 @@ textarea {
     align-items: center;
     width: 100%;
 }
+
+.input-wrapper-date-form:hover {
+    border: 1px solid var(--border-secondary);
+    border-radius: 0.5rem;
+
+}
+
+.input-wrapper-date-form:active {
+    border: 1px solid var(--border-brand);
+    border-radius: 0.5rem;
+
+}
+
+
 
 .date-picker {
     width: 100%;
@@ -171,6 +203,26 @@ textarea {
     appearance: none;
     -webkit-appearance: none;
 }
+
+.hour-picker:hover {
+    border: 1px solid var(--border-secondary);
+    border-radius: 0.5rem;
+
+}
+
+.hour-picker:active {
+    border: 1px solid var(--border-brand);
+    border-radius: 0.5rem;
+
+}
+
+
+
+.hour-picker.invalid {
+    border: 2px solid red;
+    opacity: 0.5;
+}
+
 
 .hour-picker-icon {
     position: absolute;

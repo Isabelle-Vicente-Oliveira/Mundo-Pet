@@ -79,7 +79,6 @@
 .appointment-card {
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid var(--content-tertiary);
     padding: 1.25rem;
 
 
@@ -130,7 +129,6 @@
     .appointment-card {
         display: flex;
         flex-direction: row;
-        border-bottom: 1px solid var(--content-tertiary);
         padding: 1.25rem;
         justify-content: space-between;
     }
